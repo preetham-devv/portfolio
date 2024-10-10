@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
 import { NAVIGATION_LINKS } from "../constants";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -33,11 +32,6 @@ const Navbar = () => {
         <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg bg-black/20 py-3 backdrop-blur-lg lg:flex">
           <div className="flex justify-between gap-6">
             <div>
-              <a href="#">
-                <img src={logo} width={90} alt="Logo" />
-              </a>
-            </div>
-            <div>
               <ul className="flex items-center gap-4">
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
@@ -58,11 +52,6 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div className="rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
-            <div>
-              <a href="#">
-                <img src={logo} width={90} alt="Logo" className="m-2" />
-              </a>
-            </div>
             <div className="flex items-center">
               <button
                 className="focus:outline-none lg:hidden"

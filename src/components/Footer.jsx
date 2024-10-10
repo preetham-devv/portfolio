@@ -1,5 +1,5 @@
 import { SOCIAL_MEDIA_LINKS } from "../constants";
-import logo from "../assets/logo.png";
+//import logo from "../assets/logo.png";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 1 }}
         >
-          <img src={logo} width={200} className="mb-2" />
+        
           <div className="mb-10 h-3 w-12 bg-yellow-400" />
         </motion.figure>
       </div>

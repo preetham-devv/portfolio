@@ -85,10 +85,11 @@ export const PROJECTS = [
     link: "https://github.com/preetham-devv/Breast-Cancer-Prediction"
   },
   {
-    title: "Blog Platform",
+    title: "Conversational Q A Chatbot Using Gemini-Pro",
     subtitle:
       "A blogging platform developed with Ruby on Rails and PostgreSQL.",
     image: image6,
+    link: "https://github.com/preetham-devv/Conversational-Q-A-Chatbot-Using-Gemini-Pro"
   },
   {
     title: "Fitness Tracker",
@@ -96,9 +97,10 @@ export const PROJECTS = [
     image: image7,
   },
   {
-    title: "Recipe Finder",
+    title: "Auto MPG Data Processing with Pandas and Pipelines",
     subtitle: "A recipe finder application developed with Angular and Node.js.",
     image: image8,
+    link :"https://github.com/preetham7225/Auto-MPG-Data-Processing-with-Pandas-and-Pipelines"
   },
 ];
 
@@ -175,27 +177,27 @@ export const TESTIMONIALS = [
 
 export const SOCIAL_MEDIA_LINKS = [
   {
-    href: "https://x.com/",
+    href: "https://www.facebook.com/preetham.ch.5",
     icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://x.com/",
+    href: "https://discord.com/channels/@me",
     icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://x.com/",
+    href: "https://www.instagram.com/preetham_ch_/",
     icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://x.com/",
+    href: "https://x.com/preethamch2",
     icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://github.com/",
+    href: "https://github.com/preetham-devv",
     icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/preetham-ch-2i/",
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
   },
 ];
