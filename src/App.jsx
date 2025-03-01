@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials";
+import Education from "./components/Education";
 
 const App = () => {
   return (
@@ -14,10 +15,10 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <About />
-      <Projects />
-      <Skills />
-      <AchievementShowcase />
       <Testimonials />
+      <Skills />
+      <Education />
+      <Projects />
       <ContactForm />
       <Footer />
     </main>

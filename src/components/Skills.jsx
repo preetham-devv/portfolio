@@ -23,7 +23,7 @@ const Skills = () => {
     <div className="container mx-auto" id="skills">
       <h2 className="mb-12 mt-20 text-center text-4xl font-semibold">Skills</h2>
       <motion.div
-        className="mx-2 flex flex-col rounded-xl bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 py-10 lg:px-20"
+        className="mx-2 flex flex-wrap justify-center gap-10 rounded-xl bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 py-10 lg:px-20" // flex-wrap for wrapping items side by side
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
@@ -32,15 +32,12 @@ const Skills = () => {
         {SKILLS.map((skill, index) => (
           <motion.div
             key={index}
-            className="mb-8 flex items-center justify-between"
+            className="flex flex-col items-center" // Make it a column to put the name under the icon
             variants={itemVariants}
           >
-            <div className="flex items-center">
+            <div className="flex flex-col items-center">
               {skill.icon}
-              <h3 className="px-6 text-xl lg:text-3xl">{skill.name}</h3>
-            </div>
-            <div className="text-md border-b-2 border-yellow-400 font-semibold lg:text-xl">
-              <span>{skill.experience}</span>
+              <h3 className="text-sm mt-2 lg:text-lg">{skill.name}</h3> {/* Adjust font size and spacing */}
             </div>
           </motion.div>
         ))}

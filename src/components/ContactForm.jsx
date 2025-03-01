@@ -45,10 +45,10 @@ const ContactForm = () => {
 
       emailjs
         .send(
-          "service_x3fyqbm", // Replace with your EmailJS service ID
-          "template_zpmv47j", // Replace with your EmailJS template ID
+          "service_e8djl6f", // Replace with your EmailJS service ID
+          "template_4no5bfc", // Replace with your EmailJS template ID
           formData,
-          "_bv4VNK8Pd3j3_Hnm",
+          "PUsMdlR9DJOK23oLQ",
         )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
@@ -69,7 +69,7 @@ const ContactForm = () => {
     <div className="mx-auto max-w-3xl p-4" id="contact">
       <Toaster />
       <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
-        Let's Connect
+      Let&apos;s Connect
       </h2>
       <motion.form
         onSubmit={handleSubmit}
