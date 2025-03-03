@@ -267,7 +267,7 @@ export const TESTIMONIALS = [
     [
       "Taught Python, Java, and C# with a focus on algorithms, advanced data structures, OOP, recursion, and design patterns.",
       "Emphasized core programming fundamentals such as conditionals, loops, arrays, and methods, alongside effective debugging and error handling techniques.",
-      "Led hands-on lab sessions covering file I/O operations, exception handling, and GUI development using industry-standard IDEs (e.g., Visual Studio, Eclipse, IntelliJ).",
+      "Led hands-on lab sessions covering file I/O operations, exception handling, and GUI development using industry-standard IDEs (e.g., Pycharm, IntelliJ).",
       "Introduced version control (Git), unit testing, and continuous integration practices to prepare students for real-world software development.",
       "Evaluated and provided detailed feedback on code-based assignments, ensuring adherence to best practices in software design and coding standards.",
       "Collaborated with faculty and fellow GTAs to refine course materials and integrate agile methodologies and test-driven development into the curriculum.",
