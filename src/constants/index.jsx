@@ -327,7 +327,7 @@ export const EDUCATION = [
   {
     "role": "Masters Degree, Information Technology",
     "company": "Kennesaw State University",
-    "period": "Jan 2025 - Present",
+    "period": "Jan 2024 - Present",
     "image": user2
   },
   {
