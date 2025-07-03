@@ -1,4 +1,4 @@
-import { TESTIMONIALS } from "../constants";
+import { TESTIMONIALS } from "../constants"; // Assuming this is now your experience data
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -16,9 +16,10 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const Testimonials = () => {
+const Experience = () => {
   return (
-    <div className="container mx-auto mt-20 py-16 tracking-tighter" id="Testimonials">
+    // Changed id to "Experience" for consistency
+    <div className="container mx-auto mt-20 py-16 tracking-tighter" id="Experience">
       <h2 className="mb-12 text-center text-4xl font-semibold text-white">Experience</h2>
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 gap-8"
@@ -27,32 +28,29 @@ const Testimonials = () => {
         variants={containerVariants}
         viewport={{ once: true }}
       >
-        {TESTIMONIALS.map((testimonial, index) => (
+        {/* Renamed variable to "experience" for clarity */}
+        {TESTIMONIALS.map((experience, index) => (
           <motion.div
             key={index}
-            className="flex flex-col p-6 rounded-lg border border-dotted border-gray-600 bg-transparent"
+            className="flex flex-col justify-between p-6 rounded-lg border border-dotted border-gray-600 bg-transparent"
             variants={itemVariants}
           >
-            <div className="flex items-center mb-4">
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="h-16 w-16 rounded-full mr-4"
-              />
-              <div>
-                <p className="font-bold text-white">{testimonial.name}</p>
-                <p className="text-white">{testimonial.title}</p>
+            <div>
+              <div className="flex items-center mb-2">
+                <img
+                  src={experience.image}
+                  alt={experience.name}
+                  className="h-16 w-16 rounded-full mr-4 object-cover"
+                />
+                <div>
+                  <p className="font-bold text-white">{experience.name}</p>
+                  <p className="text-white">{experience.title}</p>
+                </div>
               </div>
             </div>
-            {Array.isArray(testimonial.quote) ? (
-              <ul className="list-disc pl-5 text-left italic text-white">
-                {testimonial.quote.map((line, i) => (
-                  <li key={i}>{line}</li>
-                ))}
-              </ul>
-            ) : (
-              <p className="italic text-white">"{testimonial.quote}"</p>
-            )}
+            {/* --- CHANGE IS HERE --- */}
+            {/* Displaying the 'dates' property instead of 'quote' */}
+            <p className="mt-4 text-sm text-neutral-400">{experience.dates}</p>
           </motion.div>
         ))}
       </motion.div>
@@ -60,4 +58,5 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+// Renamed export for consistency
+export default Experience;

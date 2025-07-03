@@ -261,64 +261,27 @@ export const ACHIEVEMENT = {
 
 export const TESTIMONIALS = [
   {
-    name:"Graduate Teaching Assistant",
+    name: "Graduate Assistant",
     title: "Kennesaw State University",
-    quote:
-    [
-      "Taught Python, Java, and C# with a focus on algorithms, advanced data structures, OOP, recursion, and design patterns.",
-      "Emphasized core programming fundamentals such as conditionals, loops, arrays, and methods, alongside effective debugging and error handling techniques.",
-      "Led hands-on lab sessions covering file I/O operations, exception handling, and GUI development using industry-standard IDEs (e.g., Pycharm, IntelliJ).",
-      "Introduced version control (Git), unit testing, and continuous integration practices to prepare students for real-world software development.",
-      "Evaluated and provided detailed feedback on code-based assignments, ensuring adherence to best practices in software design and coding standards.",
-      "Collaborated with faculty and fellow GTAs to refine course materials and integrate agile methodologies and test-driven development into the curriculum.",
-    ],
+    dates: "Jan 2025 - May 2025", // Please update with your actual dates
     image: user2,
   },
   {
-    name: "MLops and Devops Intern",
+    name: "Machine Learning Engineer 1",
     title: "Criativo Technologies",
-    quote:
-    [
-     "LLMOPS Migration: Migrated inferencing from Ollama to Vllm, significantly increasing speed by 3.5x utilizing GPU.",
-     "Video Ingestion: Optimized video ingestion from YouTube to Vimeo using Kafka with Docker, increasing speed by 5x.",
-     "Container Management: Managed deployment with Docker, Nginx. Oversaw 30,000+ users & 1M+ monthly hits.",
-     "Cloud Infrastructure: Built a container registry with Kubernetes and set up AWS EKS using Terraform, with monitoring tools like Grafana, Prometheus, and Loki.",
-     "Scalable Infrastructure: Designed and deployed scalable solutions for both on-premises and cloud environments,utilizing "
-    ],
+    dates: "Sep 2022 - Dec 2023", // Please update with your actual dates
     image: user1,
   },
   {
-    name: "Software Engineer Intern",
-    title: "Aditya University",
-    quote:
-    [
-      "Addressed bugs in Spring Boot Microservices APIs through testing through Junit, JMeter ensuring optimal performance.",
-      "Worked on migrating AngularJS components to the Angular UI, reducing rendering time by 30% and overall build size by 40% for improved performance.",
-      "Implemented Kafka messaging queue to handle data flow when users posted data to Spring Boot APIs, ensuring scalable data processing across diverse databases.",
-      "Addressed issues, improved software features, and seamlessly migrated to the updated Angular UI, ensuring enhanced functionality.",
-      "Utilized Jenkins, Docker, OpenShift and Kubernetes for automated microservices builds and deployments, optimizing development processes.",
-      "Utilized Postman and Swagger for API testing and documentation, contributing to improved API reliability.",
-      "Worked on AWS EC2 and Jenkins for CI/CD, ensuring seamless integration of AWS services.",
-      "Utilized Jira and GitHub extensively for efficient project management, teamwork, and version control, contributing to streamlined development processes."
-    ],
+    name: "Machine Learning Intern",
+    title: "Barclays",
+    dates: "May 2022 - Aug 2022",
     image: user3,
   },
   {
-    name: "Data Science and Business Analyst Intern",
-    title: "Sparks Foundation",
-    quote:
-    [
-      "Developed a Python-based Exploratory Data Analysis (EDA) pipeline to analyse student datasets, streamlining data processing.",
-      "Generated over 50 data visualizations using Matplotlib and Seaborn, uncovering key trends and classification in student performance.",
-      "Improved predictive modelling accuracy by 25% with Scikit-Learn, enhancing insights into student performance by 40%.",
-      "Automated analysis tasks, reducing overall analysis time by 30% and allowing for more efficient data processing.",
-      "Collaborated with a team of data scientists to identify and resolve data inconsistencies, improving the quality of the datasets by 15%.",
-      "Designed and implemented a machine learning model to classify students into performance categories, increasing prediction accuracy by 20%.",
-      "Created custom dashboards in Jupyter Notebooks to visually represent the performance of various machine learning models for stakeholder presentations.",
-      " Used pandas and NumPy for data manipulation, preprocessing over 100,000 records, optimizing the pipeline’s speed by 35%.",
-      "Applied hyperparameter tuning using GridSearchCV to improve the performance of machine learning models, increasing model efficiency by 10%."
-
-    ],
+    name: "Software Engineer Intern",
+    title: "Lumen Technologies",
+    dates: "Sep 2021 - Dec 2021", // Please update with your actual dates
     image: user4,
   }
 ];
