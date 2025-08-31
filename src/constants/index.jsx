@@ -30,6 +30,16 @@ import { SiLangchain, SiScikitlearn, SiOpencv } from "react-icons/si";
 import { SiPytorch, SiKeras } from "react-icons/si";
 import { FaStream } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
+import { SiApacheairflow, SiGooglecloud } from "react-icons/si";
+import { FaRProject } from "react-icons/fa";
+import { SiApachespark, SiApachekafka, SiApachehive } from "react-icons/si";
+import { SiSnowflake } from "react-icons/si";
+import { SiGooglebigquery } from "react-icons/si";
+import { SiMicrosoftsqlserver } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa";
+import { SiDbt, SiInformatica, SiTalend } from "react-icons/si";
+import { SiPrometheus, SiGrafana, SiDatadog } from "react-icons/si";
+import { SiPowerbi, SiTableau } from "react-icons/si";
 
 import image1 from "../assets/project1.jpeg";
 import image2 from "../assets/project2.jpeg";
@@ -113,34 +123,134 @@ export const PROJECTS = [
 
 export const SKILLS = [
   {
-    icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-400" />,
-    name: "React",
+    icon: <FaPython className="text-4xl lg:text-6xl text-blue-600" />,
+    name: "Python",
+    experience: "3+ years",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "SQL",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Scala",
+    experience: "N/A",
+  },
+  {
+    icon: <FaRProject className="text-4xl lg:text-6xl text-blue-500" />,
+    name: "R",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Bash/Shell",
+    experience: "N/A",
+  },
+  {
+    icon: <SiApachespark className="text-4xl lg:text-6xl text-orange-600" />,
+    name: "Apache Spark",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Hadoop",
+    experience: "N/A",
+  },
+  {
+    icon: <SiApachehive className="text-4xl lg:text-6xl text-orange-400" />,
+    name: "Hive",
+    experience: "N/A",
+  },
+  {
+    icon: <FaStream className="text-4xl lg:text-6xl text-black" />,
+    name: "Kafka",
     experience: "2+ years",
   },
   {
-    icon: <TbBrandNextjs className="text-4xl lg:text-6xl text-white" />,
-    name: "Next.js",
-    experience: "1+ year",
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Delta Lake",
+    experience: "N/A",
   },
   {
-    icon: <FaJenkins className="text-4xl lg:text-6xl text-blue-600" />,
-    name: "Jenkins",
-    experience: "1+ year",
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "ClickHouse",
+    experience: "N/A",
   },
   {
-    icon: <SiMongodb className="text-4xl lg:text-6xl text-green-600" />,
-    name: "MongoDB",
-    experience: "1.5+ years",
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Flink",
+    experience: "N/A",
   },
   {
-    icon: <DiRedis className="text-4xl lg:text-6xl text-red-600" />,
-    name: "Redis",
-    experience: "1+ year",
+    icon: <SiSnowflake className="text-4xl lg:text-6xl text-blue-400" />,
+    name: "Snowflake",
+    experience: "N/A",
   },
   {
-    icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-600" />,
-    name: "Node.js",
+    icon: <FaAws className="text-4xl lg:text-6xl text-orange-500" />,
+    name: "Amazon Redshift",
+    experience: "N/A",
+  },
+  {
+    icon: <SiGooglebigquery className="text-4xl lg:text-6xl text-blue-600" />,
+    name: "Google BigQuery",
+    experience: "N/A",
+  },
+  {
+    icon: <SiAzuredevops className="text-4xl lg:text-6xl text-blue-600" />,
+    name: "Azure Synapse Analytics",
+    experience: "N/A",
+  },
+  {
+    icon: <SiApacheairflow className="text-4xl lg:text-6xl text-blue-500" />,
+    name: "Apache Airflow",
+    experience: "N/A",
+  },
+  {
+    icon: <SiDbt className="text-4xl lg:text-6xl text-blue-700" />,
+    name: "dbt",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Apache NiFi",
+    experience: "N/A",
+  },
+  {
+    icon: <SiAzuredevops className="text-4xl lg:text-6xl text-blue-600" />,
+    name: "Azure Data Factory",
+    experience: "N/A",
+  },
+  {
+    icon: <SiInformatica className="text-4xl lg:text-6xl text-purple-600" />,
+    name: "Informatica",
+    experience: "N/A",
+  },
+  {
+    icon: <SiTalend className="text-4xl lg:text-6xl text-orange-500" />,
+    name: "Talend",
+    experience: "N/A",
+  },
+  {
+    icon: <FaAws className="text-4xl lg:text-6xl text-orange-500" />,
+    name: "AWS",
     experience: "2+ years",
+  },
+  {
+    icon: <SiAzuredevops className="text-4xl lg:text-6xl text-blue-600" />,
+    name: "Azure",
+    experience: "1+ year",
+  },
+  {
+    icon: <SiGooglecloud className="text-4xl lg:text-6xl text-green-500" />,
+    name: "GCP",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Data Modeling",
+    experience: "N/A",
   },
   {
     icon: <BiLogoPostgresql className="text-4xl lg:text-6xl text-sky-700" />,
@@ -148,24 +258,34 @@ export const SKILLS = [
     experience: "1+ year",
   },
   {
-    icon: <FaPython className="text-4xl lg:text-6xl text-blue-600" />,
-    name: "Python",
-    experience: "3+ years",
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "MySQL",
+    experience: "N/A",
   },
   {
-    icon: <FaJava className="text-4xl lg:text-6xl text-red-500" />,
-    name: "Java",
-    experience: "4+ years",
+    icon: <SiMicrosoftsqlserver className="text-4xl lg:text-6xl text-red-700" />,
+    name: "MS SQL Server",
+    experience: "N/A",
   },
   {
-    icon: <FaJsSquare className="text-4xl lg:text-6xl text-yellow-400" />,
-    name: "JavaScript",
-    experience: "3+ years",
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Oracle",
+    experience: "N/A",
   },
   {
-    icon: <FaAws className="text-4xl lg:text-6xl text-orange-500" />,
-    name: "AWS",
-    experience: "2+ years",
+    icon: <SiMongodb className="text-4xl lg:text-6xl text-green-600" />,
+    name: "MongoDB",
+    experience: "1.5+ years",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Cassandra",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "DynamoDB",
+    experience: "N/A",
   },
   {
     icon: <FaDocker className="text-4xl lg:text-6xl text-blue-600" />,
@@ -178,14 +298,109 @@ export const SKILLS = [
     experience: "1+ year",
   },
   {
-    icon: <SiAzuredevops className="text-4xl lg:text-6xl text-blue-600" />,
-    name: "Azure",
+    icon: <FaJenkins className="text-4xl lg:text-6xl text-blue-600" />,
+    name: "Jenkins",
     experience: "1+ year",
   },
   {
-    icon: <SiAngular className="text-4xl lg:text-6xl text-red-600" />, // Angular added here
-    name: "Angular",
-    experience: "2+ years",
+    icon: <FaGithub className="text-4xl lg:text-6xl text-white" />,
+    name: "GitHub Actions",
+    experience: "N/A",
+  },
+  {
+    icon: <SiPrometheus className="text-4xl lg:text-6xl text-orange-600" />,
+    name: "Prometheus",
+    experience: "N/A",
+  },
+  {
+    icon: <SiGrafana className="text-4xl lg:text-6xl text-orange-500" />,
+    name: "Grafana",
+    experience: "N/A",
+  },
+  {
+    icon: <SiDatadog className="text-4xl lg:text-6xl text-purple-600" />,
+    name: "Datadog",
+    experience: "N/A",
+  },
+  {
+    icon: <FaAws className="text-4xl lg:text-6xl text-orange-500" />,
+    name: "CloudWatch",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "ELK Stack",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Great Expectations",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Amundsen",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "OpenMetadata",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Apache Ranger",
+    experience: "N/A",
+  },
+  {
+    icon: <SiPowerbi className="text-4xl lg:text-6xl text-yellow-500" />,
+    name: "Power BI",
+    experience: "N/A",
+  },
+  {
+    icon: <SiTableau className="text-4xl lg:text-6xl text-blue-600" />,
+    name: "Tableau",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Looker",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Google Data Studio",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Metabase",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Microsoft Excel",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Exploratory Data Analysis (EDA)",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "A/B Testing",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Hypothesis Testing",
+    experience: "N/A",
+  },
+  {
+    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
+    name: "Regression Analysis",
+    experience: "N/A",
   },
   {
     icon: <FaGit className="text-4xl lg:text-6xl text-orange-600" />,
@@ -196,11 +411,6 @@ export const SKILLS = [
     icon: <FaGitlab className="text-4xl lg:text-6xl text-orange-400" />,
     name: "GitLab",
     experience: "1+ year",
-  },
-  {
-    icon: <FaTools className="text-4xl lg:text-6xl text-gray-500" />,
-    name: "CI/CD",
-    experience: "2+ years",
   },
   {
     icon: <SiTailwindcss className="text-4xl lg:text-6xl text-teal-500" />,
@@ -237,24 +447,11 @@ export const SKILLS = [
     name: "Keras",
     experience: "2+ years",
   },
-  {
-    icon: <FaStream className="text-4xl lg:text-6xl text-black" />,
-    name: "Kafka",
-    experience: "2+ years",
-  },
-  {
-    icon: <SiExpress className="text-4xl lg:text-6xl text-gray-400" />,
-    name: "Express.js",
-    experience: "2+ years",
-  },
-  
-  
-  
 ];
 
 export const ACHIEVEMENT = {
   title: "International Hackaton - Tokyo",
-  award: "Gold Medalist - 2024", 
+  award: "Gold Medalist - 2024",
   description:
     "Winner of the 2024 Algo coding representing the University of Oxford. This achievement showcases exceptional problem-solving skills and dedication. The event provided a platform to innovate and collaborate with the brightest minds, resulting in a prestigious accolade.",
 };
