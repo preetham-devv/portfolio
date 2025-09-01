@@ -1,5 +1,6 @@
-import { SKILLS } from "../constants";
+import { SKILLS_CATEGORIES } from "../constants";
 import { motion } from "framer-motion";
+import React from 'react';
 
 const containerVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -22,26 +23,27 @@ const Skills = () => {
   return (
     <div className="container mx-auto" id="skills">
       <h2 className="mb-12 mt-20 text-center text-4xl font-semibold">Skills</h2>
-      <motion.div
-        className="mx-2 flex flex-wrap justify-center gap-10 rounded-xl bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 py-10 lg:px-20" // flex-wrap for wrapping items side by side
-        initial="hidden"
-        whileInView="visible"
-        variants={containerVariants}
-        viewport={{ once: true }}
-      >
-        {SKILLS.map((skill, index) => (
-          <motion.div
-            key={index}
-            className="flex flex-col items-center" // Make it a column to put the name under the icon
-            variants={itemVariants}
-          >
-            <div className="flex flex-col items-center">
-              {skill.icon}
-              <h3 className="text-sm mt-2 lg:text-lg">{skill.name}</h3> {/* Adjust font size and spacing */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {Object.keys(SKILLS_CATEGORIES).map((category, index) => (
+          <div key={index} className="p-6 border border-gray-200 rounded-xl">
+            <h3 className="text-xl font-bold mb-4">{category}</h3>
+            <div className="flex flex-wrap gap-2">
+              {SKILLS_CATEGORIES[category].map((skill, skillIndex) => (
+                <motion.div
+                  key={skillIndex}
+                  className="flex flex-col items-center"
+                  variants={itemVariants}
+                >
+                  <div className="flex flex-col items-center">
+                    {skill.icon}
+                    <h3 className="text-sm mt-2 lg:text-lg">{skill.name}</h3>
+                  </div>
+                </motion.div>
+              ))}
             </div>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
